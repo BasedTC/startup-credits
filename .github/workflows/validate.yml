@@ -1,0 +1,60 @@
+name: validate-catalog-change
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      SOURCEY_CANDIDATE_VERIFIER_DIGEST: 3ac962ab4fd5c2ff4b9364dba73fe573071f1793f9ad7144fb3385c725c0ad9a
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 22.12.0
+      - name: Enforce the data-only repository boundary
+        env:
+          HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
+        run: |
+          invalid="$(
+            git ls-tree -r --name-only "$HEAD_REVISION" |
+              grep -Ev '^(AGENTS\.md|CONTRIBUTING\.md|DATA-LICENSE\.md|LICENSE|README\.md|data/README\.md|data/vendors/[a-z0-9]{2}/[a-z0-9][a-z0-9-]*\.yaml|\.github/CODEOWNERS|\.github/pull_request_template\.md|\.github/workflows/validate\.yml)$' ||
+              true
+          )"
+          if [[ -n "$invalid" ]]; then
+            printf 'startup-credits contains forbidden paths:\n%s\n' "$invalid" >&2
+            exit 1
+          fi
+      - name: Install the exact Sourcey Candidate Verifier
+        run: |
+          digest="$SOURCEY_CANDIDATE_VERIFIER_DIGEST"
+          name="sourcey-candidate-verifier-sha256-${digest}.tgz"
+          origin="https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-${digest}"
+          curl --fail-with-body --silent --show-error --max-time 120 \
+            --output "$RUNNER_TEMP/$name" "$origin/$name"
+          curl --fail-with-body --silent --show-error --max-time 120 \
+            --output "$RUNNER_TEMP/$name.sha256" "$origin/$name.sha256"
+          (
+            cd "$RUNNER_TEMP"
+            sha256sum --check "$name.sha256"
+          )
+          mkdir "$RUNNER_TEMP/candidate-verifier"
+          tar -xzf "$RUNNER_TEMP/$name" \
+            --strip-components=1 \
+            -C "$RUNNER_TEMP/candidate-verifier"
+      - name: Validate only the changed identity closure
+        env:
+          BASE_REVISION: ${{ github.event.pull_request.base.sha }}
+          HEAD_REVISION: ${{ github.event.pull_request.head.sha }}
+        run: |
+          node "$RUNNER_TEMP/candidate-verifier/dist/packages/candidate-verifier/src/cli.js" \
+            validate-change \
+            --repository "$GITHUB_WORKSPACE" \
+            --base "$BASE_REVISION" \
+            --head "$HEAD_REVISION"

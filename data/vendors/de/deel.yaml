@@ -1,0 +1,50 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+slug: deel
+slug_aliases: []
+name: Deel
+domains:
+  - value: deel.com
+    role: primary
+    valid_from: 2026-07-27T07:40:34.919Z
+category: hr-people
+description: Deel provides global payroll and HR software for startups to hire, manage, and pay team members across 150+ countries.
+links:
+  site: https://www.deel.com/segments/startups/
+sources:
+  - source_id: src_6e369733bfa8e965ff97164c047da6f18a586e5e58fef7db3c7225d5142b6c70
+    url: https://www.deel.com/segments/startups/
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe2r151y0shvrzcmkwt
+    offer_slug: first-5-seats-free-for-life-for-venture-backed-startups
+    offer_slug_aliases: []
+    title: First 5 seats free for life for venture-backed startups
+    summary: Venture-backed startups that have raised at least $500k in funding can get their first 5 seats free for life on Deel.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:40:34.919Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: First 5 seats free for life
+          kind: free-service
+          service: First 5 seats free for life
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must have raised at least $500k in funding (verifiable on Crunchbase).
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+      access_operator_entity_id: ent_01kyh8fpe2k0kd5rfqh8es0ccs
+    access:
+      availability: public
+      method: contact
+      url: https://www.deel.com/segments/startups/
+    source_ids:
+      - src_6e369733bfa8e965ff97164c047da6f18a586e5e58fef7db3c7225d5142b6c70

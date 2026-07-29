@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe4m8296zng9ncsnbqs
+slug: neo4j
+slug_aliases: []
+name: Neo4j
+domains:
+  - value: neo4j.com
+    role: primary
+    valid_from: 2026-07-27T07:37:13.263Z
+category: databases
+description: Neo4j is a graph database platform built to store, query, and analyze connected data for context-aware AI applications.
+links:
+  site: https://neo4j.com
+sources:
+  - source_id: src_69ffb8925d5967c3d95dc1708b78eea0ec83de27d1a390b28c4e5a1ccf716811
+    url: https://neo4j.com/startup-program/
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe481pd2jnjrc9fr9qr
+    offer_slug: neo4j-startup-program
+    offer_slug_aliases: []
+    title: Neo4j Startup Program
+    summary: Eligible early-stage startups can receive up to $16K in Neo4j Aura credits, expert guidance from graph engineers, and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:37:13.263Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $16K in Aura credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Available for startups at Series B or earlier building a product for multiple customers (excluding dev shops, consultants, or agencies) with a functioning website and company LinkedIn profile.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4m8296zng9ncsnbqs
+      access_operator_entity_id: ent_01kyh8fpe4m8296zng9ncsnbqs
+    access:
+      availability: public
+      method: form
+      url: https://neo4j.com/startup-program/
+    source_ids:
+      - src_69ffb8925d5967c3d95dc1708b78eea0ec83de27d1a390b28c4e5a1ccf716811

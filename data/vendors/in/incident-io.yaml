@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe322z5v22fkrz422xa
+slug: incident-io
+slug_aliases: []
+name: incident.io
+domains:
+  - value: incident.io
+    role: primary
+    valid_from: 2026-07-27T07:36:32.679Z
+category: observability
+description: Set up on-call, run incidents, and publish a status page in minutes with clean workflows built for modern startups.
+links:
+  site: https://incident.io
+sources:
+  - source_id: src_0c09093713ab461ce2b22ca3fef2c2042b6be1fe35db093c686a5215ea7a9565
+    url: https://incident.io/industry/startups
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe3ps9cn0y3p18nnnrt
+    offer_slug: incident-io-startup-program
+    offer_slug_aliases: []
+    title: incident.io Startup Program
+    summary: Eligible startups can get started for free while growing and receive $1,500 off the Team plan when scaling.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:36:32.679Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,500 off Team plan
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a new incident.io customer with under 20 employees. Credits expire 1 year after moving to the Team plan.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe322z5v22fkrz422xa
+      access_operator_entity_id: ent_01kyh8fpe322z5v22fkrz422xa
+    access:
+      availability: public
+      method: contact
+      url: https://incident.io/industry/startups
+    source_ids:
+      - src_0c09093713ab461ce2b22ca3fef2c2042b6be1fe35db093c686a5215ea7a9565

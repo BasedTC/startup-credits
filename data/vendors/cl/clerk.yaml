@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe1p3qgn8mxp3ev5328
+slug: clerk
+slug_aliases: []
+name: Clerk
+domains:
+  - value: clerk.com
+    role: primary
+    valid_from: 2026-07-27T07:35:54.459Z
+category: auth-security
+description: Clerk provides developer-first user management and authentication APIs.
+links:
+  site: https://clerk.com
+sources:
+  - source_id: src_636c918f86d4037ce06c2b193a4e6a37c74bc41a2c188ddbcfb8ae35014ee456
+    url: https://clerk.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe1xjpg9wzqvqknjtv6
+    offer_slug: clerk-pro-startup-discount
+    offer_slug_aliases: []
+    title: Clerk Pro Startup Discount
+    summary: Eligible early-stage startups can receive Clerk Pro features at a discount.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:35:54.459Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Discounted Clerk Pro features
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Up to 1 year after launch with up to $5 million in venture funding.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe1p3qgn8mxp3ev5328
+      access_operator_entity_id: ent_01kyh8fpe1p3qgn8mxp3ev5328
+    access:
+      availability: public
+      method: form
+      url: https://clerk.com/startups
+    source_ids:
+      - src_636c918f86d4037ce06c2b193a4e6a37c74bc41a2c188ddbcfb8ae35014ee456

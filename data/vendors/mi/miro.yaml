@@ -1,0 +1,91 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+slug: miro
+slug_aliases: []
+name: Miro
+domains:
+  - value: miro.com
+    role: primary
+    valid_from: 2026-07-27T07:36:53.728Z
+category: productivity
+description: Miro is a visual workspace for innovation that helps teams brainstorm, plan, build, and collaborate in one place.
+links:
+  site: https://miro.com/startups/
+sources:
+  - source_id: src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
+    url: https://miro.com/startups/
+programs:
+  - program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
+    program_slug: miro-for-startups
+    program_slug_aliases: []
+    title: Miro for Startups
+    source_ids:
+      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
+offers:
+  - offer_id: off_01kyh8fpe335dxj6tsyk7tb78w
+    program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
+    offer_slug: miro-early-startups-free-credits
+    offer_slug_aliases: []
+    title: Miro Early Startups Free Credits
+    summary: Early-stage startups can get free Miro credits to access Miro's visual workspace tools, templates, and platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:36:53.728Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free Miro credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Available for early startups.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+      access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+    access:
+      availability: public
+      method: other
+      url: https://miro.com/startups/
+    source_ids:
+      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037
+  - offer_id: off_01kyh8fpe4r2g9bf55p9rcwqvw
+    program_id: prg_01kyh8fpe335dxj6tsyk7tb78w
+    offer_slug: miro-scale-ups-discount
+    offer_slug_aliases: []
+    title: Miro Scale Ups Discount
+    summary: Scaling startups can receive up to a 25% discount on Miro's workspace platform.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:36:53.728Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to 25% discount
+          kind: discount
+          percentage:
+            kind: up-to
+            basis_points: 2500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Available for scale ups.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+      access_operator_entity_id: ent_01kyh8fpe3h966sfgy1aghhjce
+    access:
+      availability: public
+      method: other
+      url: https://miro.com/startups/
+    source_ids:
+      - src_cd12d5b849bd137660d1748c1f441203536c41948b97eef4e1122804a2620037

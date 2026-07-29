@@ -1,0 +1,50 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe4nr3y7st8xcm8gryv
+slug: pilot
+slug_aliases: []
+name: Pilot
+domains:
+  - value: pilot.com
+    role: primary
+    valid_from: 2026-07-27T07:42:45.817Z
+category: finance-accounting
+description: Pilot provides bookkeeping, tax, CFO, and outsourced operations services for startups and growing businesses.
+links:
+  site: https://pilot.com
+sources:
+  - source_id: src_03280047fb9243ba29a16274b0569d4376e75b97b65e938c2a9045faf5ef21ca
+    url: https://pilot.com/pricing
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe4pawgdejcqq2q04f9
+    offer_slug: free-stock-administration-for-pre-seed-founders
+    offer_slug_aliases: []
+    title: Free Stock Administration for Pre-Seed Founders
+    summary: Pre-seed founders with up to five people on their cap table can receive free stock administration through Pilot's Founders Tier, including cap table setup, platform configuration, and equity support.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:42:45.817Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free
+          kind: free-service
+          service: Free
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a pre-seed founder with up to five people on the cap table issuing equity through Carta or Pulley.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4nr3y7st8xcm8gryv
+      access_operator_entity_id: ent_01kyh8fpe4nr3y7st8xcm8gryv
+    access:
+      availability: public
+      method: contact
+      url: https://pilot.com/pricing
+    source_ids:
+      - src_03280047fb9243ba29a16274b0569d4376e75b97b65e938c2a9045faf5ef21ca

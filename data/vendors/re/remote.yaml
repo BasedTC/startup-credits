@@ -1,0 +1,53 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe4dkt6qsga03ep38rk
+slug: remote
+slug_aliases: []
+name: Remote
+domains:
+  - value: remote.com
+    role: primary
+    valid_from: 2026-07-27T07:43:11.472Z
+category: hr-people
+description: Remote’s intuitive platform empowers small businesses with 1-200 employees to run international payroll, file taxes, and maintain compliance no matter where their employees call home.
+links:
+  site: https://remote.com
+sources:
+  - source_id: src_53cc73a8bcbb3adc5cb83545f0f51aacbd955a1a644b465dc1878aebbe49333e
+    url: https://remote.com/global-hr/small-business
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe408k67p925g1km9bt
+    offer_slug: remote-startups-discount
+    offer_slug_aliases: []
+    title: Remote Startups Discount
+    summary: Startups receive a 15% discount on Remote service fees for an unlimited number of hires for 12 months using promo code RFS15OFF.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:43:11.472Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 15% discount for 12 months
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 1500
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Available to startups using promo code RFS15OFF.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4dkt6qsga03ep38rk
+      access_operator_entity_id: ent_01kyh8fpe4dkt6qsga03ep38rk
+    access:
+      availability: public
+      method: code
+      url: https://remote.com/global-hr/small-business
+      public_code: RFS15OFF
+    source_ids:
+      - src_53cc73a8bcbb3adc5cb83545f0f51aacbd955a1a644b465dc1878aebbe49333e

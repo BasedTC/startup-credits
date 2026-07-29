@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
+slug: salesforce
+slug_aliases: []
+name: Salesforce
+domains:
+  - value: salesforce.com
+    role: primary
+    valid_from: 2026-07-27T07:43:44.281Z
+category: crm-sales
+description: Salesforce Launchpad helps venture-backed startups of all stages grow faster with proven GTM strategies, AI, and digital labor.
+links:
+  site: https://www.salesforce.com
+sources:
+  - source_id: src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748
+    url: https://www.salesforce.com/launchpad/?bc=OTH
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe5a27280hssp9jdt7q
+    offer_slug: salesforce-launchpad-free-and-discounted-solutions
+    offer_slug_aliases: []
+    title: Salesforce Launchpad Free and Discounted Solutions
+    summary: Salesforce Launchpad offers venture-backed startups free and discounted Salesforce solutions, including special offers on Starter Suite, Pro Suite, Sales Cloud Enterprise Edition, Agentforce, Tableau, and Slack.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:43:44.281Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free and discounted Salesforce products
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Open to venture-backed startups across industries and growth stages. Applications are reviewed within 5 business days to verify proof of funding.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
+      access_operator_entity_id: ent_01kyh8fpe55a2m2njc8y4xs2df
+    access:
+      availability: public
+      method: form
+      url: https://www.salesforce.com/launchpad/?bc=OTH
+    source_ids:
+      - src_de248238da7faac44fa1bff72d2bcf4525bc36ccdb8b20a93ad9bbedd00f3748

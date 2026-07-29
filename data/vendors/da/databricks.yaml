@@ -1,0 +1,80 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
+slug: databricks
+slug_aliases: []
+name: Databricks
+domains:
+  - value: databricks.com
+    role: primary
+    valid_from: 2026-07-27T07:40:34.889Z
+category: data-analytics
+description: Databricks provides a unified platform for data, analytics, and AI, helping startups build and scale data products efficiently.
+links:
+  site: https://www.databricks.com
+sources:
+  - source_id: src_379412354a02bdd589f71378373ca1d9a3e5cd11d7b2b5502d51384938dd7035
+    url: https://www.databricks.com/product/startups
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe2j3bzhymycrhggghe
+    offer_slug: databricks-ai-accelerator-program
+    offer_slug_aliases: []
+    title: Databricks AI Accelerator Program
+    summary: Invitation-only program providing early-stage investment, product credits, and technical and go-to-market mentorship for AI startups.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:40:34.889Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Early-stage investment, product credits, and mentorship
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Invitation-only initiative for high-potential AI startups building on the Databricks Platform.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
+      access_operator_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
+    access:
+      availability: public
+      method: other
+      url: https://www.databricks.com/product/startups
+    source_ids:
+      - src_379412354a02bdd589f71378373ca1d9a3e5cd11d7b2b5502d51384938dd7035
+  - offer_id: off_01kyh8fpe2pr8wsptg5z7a2jpy
+    offer_slug: databricks-for-startups-program-credits
+    offer_slug_aliases: []
+    title: Databricks for Startups Program Credits
+    summary: Qualifying startups can receive up to $200k in credits for Databricks and Neon to build and scale data and AI strategy.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:40:34.889Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $200,000 in credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Available to qualifying startups (founders can apply directly or ask their investor).
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
+      access_operator_entity_id: ent_01kyh8fpe20b7d3zws8zfya66r
+    access:
+      availability: public
+      method: form
+      url: https://www.databricks.com/product/startups
+    source_ids:
+      - src_379412354a02bdd589f71378373ca1d9a3e5cd11d7b2b5502d51384938dd7035

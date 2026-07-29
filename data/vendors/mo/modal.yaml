@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe43gqa08cvashmf19y
+slug: modal
+slug_aliases: []
+name: Modal
+domains:
+  - value: modal.com
+    role: primary
+    valid_from: 2026-07-27T07:36:53.450Z
+category: ai-ml
+description: Modal is the fastest way for startups to deploy custom AI models
+links:
+  site: https://modal.com
+sources:
+  - source_id: src_12f9a93d061e0e5f58df0d8d7ac914e89e2bd620062a3842e3ea4bae69118813
+    url: https://modal.com/startups
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe4fyz5pxzv154ah0y4
+    offer_slug: modal-for-startups
+    offer_slug_aliases: []
+    title: Modal for Startups
+    summary: Modal provides eligible startups with thousands of free GPU credits, direct technical and GTM support, and access to an exclusive community of founders building AI applications.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:36:53.450Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Thousands of free GPU credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be new to Modal. Tiers are based on VC funding (e.g., >$1m from any fund or any VC funding from Modal's partner network for Seed to Series A; >$30m/post-Series B for Scaling tier).
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe43gqa08cvashmf19y
+      access_operator_entity_id: ent_01kyh8fpe43gqa08cvashmf19y
+    access:
+      availability: public
+      method: form
+      url: https://modal.com/startups
+    source_ids:
+      - src_12f9a93d061e0e5f58df0d8d7ac914e89e2bd620062a3842e3ea4bae69118813

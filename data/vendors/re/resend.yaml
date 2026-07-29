@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe5xfhy18q4ccs4a07n
+slug: resend
+slug_aliases: []
+name: Resend
+domains:
+  - value: resend.com
+    role: primary
+    valid_from: 2026-07-27T07:43:12.688Z
+category: communication
+description: Resend is designed from the ground up for startups.
+links:
+  site: https://resend.com
+sources:
+  - source_id: src_237675ce6a4816ed8dc73a67ef2aa59013ce648c281704b0ea6208fb5afd73dc
+    url: https://resend.com/yc
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe58md549t4y2367ghd
+    offer_slug: resend-yc-deal
+    offer_slug_aliases: []
+    title: Resend YC Deal
+    summary: Current YC batch startups receive $25,000 in credits for 12 months, while YC alumni receive $15,000 in credits. Includes a dedicated Slack channel with the Resend team.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:43:12.688Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $25,000 credits (current batch) or $15,000 credits (alumni)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a YC startup in the current batch or a YC alumni company.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe5xfhy18q4ccs4a07n
+      access_operator_entity_id: ent_01kyh8fpe5xfhy18q4ccs4a07n
+    access:
+      availability: public
+      method: form
+      url: https://resend.com/yc
+    source_ids:
+      - src_237675ce6a4816ed8dc73a67ef2aa59013ce648c281704b0ea6208fb5afd73dc

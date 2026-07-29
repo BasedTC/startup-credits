@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe1r4t2ewb8ym69qbre
+slug: baseten
+slug_aliases: []
+name: Baseten
+domains:
+  - value: baseten.co
+    role: primary
+    valid_from: 2026-07-27T07:39:12.709Z
+category: ai-ml
+description: Baseten is an AI inference platform providing infrastructure to help AI startups deploy, run, and scale machine learning models faster.
+links:
+  site: https://www.baseten.co
+sources:
+  - source_id: src_fbaa9953817b55dee9141c07a6dcbec03e39a4046c2eaeadc56db0100b7cfde9
+    url: https://www.baseten.co/startup-program/
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe11y56961zxm7q6sd4
+    offer_slug: baseten-ai-startup-program
+    offer_slug_aliases: []
+    title: Baseten AI Startup Program
+    summary: Early-stage AI startups can receive up to $25,000 in credits for Dedicated Inference or Training and up to $2,500 in credits for Model APIs, plus priority support, networking, and GTM assistance.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:39:12.709Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $25,000 for Dedicated Inference/Training + $2,500 for Model APIs
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an AI-first startup at Seed to Series A stage, founded less than 5 years ago, and a net new Baseten customer who has not previously received credits.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe1r4t2ewb8ym69qbre
+      access_operator_entity_id: ent_01kyh8fpe1r4t2ewb8ym69qbre
+    access:
+      availability: public
+      method: form
+      url: https://www.baseten.co/startup-program/
+    source_ids:
+      - src_fbaa9953817b55dee9141c07a6dcbec03e39a4046c2eaeadc56db0100b7cfde9

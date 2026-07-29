@@ -1,0 +1,50 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe4zndzypt528e2ntzg
+slug: redis
+slug_aliases: []
+name: Redis
+domains:
+  - value: redis.io
+    role: primary
+    valid_from: 2026-07-27T07:37:54.348Z
+category: databases
+description: The Redis startup program offers everything growing businesses need to build fast apps fast.
+links:
+  site: https://redis.io/
+sources:
+  - source_id: src_c1f2a9f31452ef5949b6e57fa22689e15e08347e9aac2371969f2c38c0cbbd89
+    url: https://redis.io/startups/
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe41sm83gbe300tdt1m
+    offer_slug: free-redis-for-qualifying-startups
+    offer_slug_aliases: []
+    title: Free Redis for Qualifying Startups
+    summary: Qualifying startups get free Redis for 6 months, early access to new features, dedicated support including monthly office hours, and access to go-to-market and co-marketing opportunities.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:37:54.348Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Free Redis for 6 months
+          kind: free-service
+          service: Free Redis for 6 months
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe4zndzypt528e2ntzg
+      access_operator_entity_id: ent_01kyh8fpe4zndzypt528e2ntzg
+    access:
+      availability: public
+      method: form
+      url: https://redis.io/startups/
+    source_ids:
+      - src_c1f2a9f31452ef5949b6e57fa22689e15e08347e9aac2371969f2c38c0cbbd89

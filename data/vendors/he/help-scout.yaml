@@ -1,0 +1,50 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe3c80bycfhyx7m3jym
+slug: help-scout
+slug_aliases: []
+name: Help Scout
+domains:
+  - value: helpscout.com
+    role: primary
+    valid_from: 2026-07-27T07:40:56.959Z
+category: support
+description: Help Scout provides customer support software featuring shared inboxes, docs knowledge bases, live chat, and AI assistants to help growing businesses support their customers.
+links:
+  site: https://www.helpscout.com
+sources:
+  - source_id: src_05ba8d34222f2831b597e210e029fd69a347b4be2c4b3e658b256d675beca04a
+    url: https://www.helpscout.com/startups/
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe3764vaa0pa94p6myj
+    offer_slug: help-scout-for-startups
+    offer_slug_aliases: []
+    title: Help Scout for Startups
+    summary: Eligible startups receive six months free of Help Scout Plus, which includes shared inboxes, messaging, AI Answers, and integrations.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:40:56.959Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 6 months free
+          kind: free-service
+          service: 6 months free
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a new Help Scout customer, an incorporated tech startup less than 2 years old, and generating under $1M in ARR.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe3c80bycfhyx7m3jym
+      access_operator_entity_id: ent_01kyh8fpe3c80bycfhyx7m3jym
+    access:
+      availability: public
+      method: form
+      url: https://www.helpscout.com/startups/
+    source_ids:
+      - src_05ba8d34222f2831b597e210e029fd69a347b4be2c4b3e658b256d675beca04a

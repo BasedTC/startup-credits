@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+slug: aws
+slug_aliases: []
+name: AWS
+domains:
+  - value: aws.amazon.com
+    role: primary
+    valid_from: 2026-07-27T07:35:36.165Z
+category: hosting-infra
+description: Amazon Web Services provides cloud infrastructure, data services, and AI/ML tools to help startups build and scale.
+links:
+  site: https://aws.amazon.com/startups/
+sources:
+  - source_id: src_76d24dd13896e7193963f92a4af2a17cf151c8909a0598a41567c53d2b202d97
+    url: https://aws.amazon.com/startups/
+programs: []
+offers:
+  - offer_id: off_01kyh8fpe12z6fgn1ywg2ykth8
+    offer_slug: aws-activate-credits
+    offer_slug_aliases: []
+    title: AWS Activate Credits
+    summary: Eligible startups can receive up to $200,000 in AWS Activate Credits to offset costs for cloud infrastructure, data services, and AI/ML models, including third-party models on Amazon Bedrock.
+    lifecycle:
+      status: active
+      effective_from: 2026-07-27T07:35:36.165Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $200,000 in credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups must apply to receive credits; AI startups ready to scale may qualify for additional credits beyond Activate.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+      access_operator_entity_id: ent_01kyh8fpe10b164tj935t8k5zb
+    access:
+      availability: public
+      method: form
+      url: https://aws.amazon.com/startups/join?destination=/credits/apply
+    source_ids:
+      - src_76d24dd13896e7193963f92a4af2a17cf151c8909a0598a41567c53d2b202d97
