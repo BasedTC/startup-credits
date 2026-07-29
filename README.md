@@ -2,7 +2,7 @@
 
 The public data repository behind Sourcey's startup-offer catalog.
 
-Each vendor has one readable YAML file under `data/vendors/{shard}/`. Those
+Each vendor has one readable YAML file under `vendors/{shard}/`. Those
 files are the contribution surface; Sourcey's private Catalog engine owns the
 schemas, validation, evidence, release construction, API, MCP, feed, scanner,
 and hosted runtime.

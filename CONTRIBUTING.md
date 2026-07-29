@@ -1,7 +1,11 @@
 # Contributing
 
 Normal pull requests add or update one or more files under
-`data/vendors/{shard}/`.
+`vendors/{shard}/`.
+
+The shard is the first two characters of the vendor slug (or the whole slug
+when it is shorter), and the filename is exactly `{slug}.yaml`; CI verifies
+that identity-derived path.
 
 - Describe only public vendor, program, and offer facts supported by the URLs
   in the record.

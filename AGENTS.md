@@ -5,7 +5,7 @@ repository. “Startup Credits” is only this GitHub repository's name.
 
 Allowed:
 
-- `data/vendors/**/*.yaml`;
+- `vendors/**/*.yaml`;
 - concise contributor, legal, and repository-boundary documentation; and
 - minimal GitHub metadata and YAML workflows that invoke digest-pinned tools
   owned by the private Sourcey workspace.
@@ -26,3 +26,8 @@ Pull-request CI processes only changed vendor files and their exact identity
 dependency closure. It must never rebuild the full catalog. Merge is the sole
 human activation and every live surface advances from the same resulting live
 head.
+
+`vendors/` is the only public data collection. Offers, programs, links, and
+sources are nested in their owning vendor document. Do not add a generic
+`data/` wrapper or another top-level collection unless Kam explicitly approves
+a genuinely independent public authoring surface.
