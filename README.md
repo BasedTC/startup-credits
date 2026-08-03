@@ -1,8 +1,8 @@
 <h1 align="center">Startup Credits</h1>
 
 <p align="center">
-  <b>Never pay the stranger price.</b><br>
-  <sub>The open registry of startup programs</sub>
+  <b>The open registry of startup programs</b><br>
+  <sub><em>Never pay the stranger price</em></sub>
 </p>
 
 <p align="center">
