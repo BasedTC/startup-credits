@@ -1,6 +1,7 @@
 <h1 align="center">Startup Credits</h1>
 
 <p align="center">
+  <b>Never pay the stranger price.</b><br>
   The open registry of startup programs, from the source.
 </p>
 
@@ -22,10 +23,10 @@
 
 ---
 
-Software vendors run startup programs: credits, discounts, a free year. The terms
-are public, scattered across a few hundred pricing pages, and they change without
-telling anyone. This is the list, one file per vendor, with the source and the
-date behind every fact.
+Every tool has two prices: the one on the pricing page, and the one startups
+actually pay. The second one is public, scattered across a few hundred vendor
+pages, and it changes without telling anyone. This is the open record of it, one
+file per vendor, with the source and the date behind every fact.
 
 ## What a record looks like
 
@@ -69,7 +70,9 @@ No key and no signup, for you or for your agents. There is an
 
 Facts are [CC BY 4.0](DATA-LICENSE.md) and training on them is welcome. Quote the
 `offer_id` and `revision_digest` and your citation still means something after
-the offer moves.
+the offer moves:
+
+    sourcey.com · <offer_id> @ <revision_digest> · CC BY 4.0
 
 ## Fixing or adding one
 
@@ -81,22 +84,27 @@ Two rules carry most of the weight. Every fact needs the vendor's own URL in
 `sources`, and if the source does not say it, it does not go in. Guessed amounts
 and invented eligibility read exactly like checked ones, which is why they get
 closed. [CONTRIBUTING.md](CONTRIBUTING.md) has the rest, including a preflight
-that runs the same verifier CI uses.
-
-Correcting a stale offer is worth as much as adding a new one.
+that runs the same verifier CI uses. Correcting a stale offer is worth as much as
+adding a new one.
 
 ## If it's your company
 
-Most records here are observed: we read your page and dated it. Prove control of
-your domain and attest to the offers you stand behind, and yours becomes signed,
-which the record then says on its face. Free, and it stays free, because vendors
-correcting their own records is the whole engine.
+Prove control of your domain, review what we have, and attest to the offers you
+stand behind. Your record then carries your signature rather than our reading of
+your page, and says so on its face. It costs nothing and it always will.
 
 [sourcey.com](https://sourcey.com), or just send a pull request.
 
+## The boundary
+
+This repository holds the vendor files. Everything that validates, compiles, and
+serves them belongs to Sourcey's private Catalog engine, and
+[AGENTS.md](AGENTS.md) draws the line.
+
 ## Licence
 
-Facts are [CC BY 4.0](DATA-LICENSE.md). Repository documentation and metadata are
-[MIT](LICENSE). This repository holds the vendor files; everything that validates,
-compiles, and serves them belongs to Sourcey's private Catalog engine, and
-[AGENTS.md](AGENTS.md) draws that boundary.
+Facts are [CC BY 4.0](DATA-LICENSE.md). Documentation and metadata are [MIT](LICENSE).
+
+---
+
+<p align="center">Know a program that isn't here yet? <a href="CONTRIBUTING.md">Add it.</a></p>
