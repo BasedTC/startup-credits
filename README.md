@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Never pay the stranger price.</b><br>
-  The open registry of startup programs, from the source.
+  The open registry of startup programs
 </p>
 
 <p align="center">
@@ -31,23 +31,27 @@ pages, worded differently every time, and quietly revised whenever the vendor
 feels like it. So we write it down. One file per vendor, every fact carrying the
 page it came from and the day we read it.
 
+Nothing here is for sale. Tiers come from evidence and are never influenced by
+payment, and the [rules](https://sourcey.com/policies) are published as catalog
+records with their own revision digests, exactly like the data they govern.
+
 ## What a record looks like
 
 ```yaml
-# vendors/re/retool.yaml
-name: Retool
+# vendors/at/atlassian.yaml
+name: Atlassian
 sources:
-  - source_id: src_2c260c8d…
-    url: https://retool.com/startups
+  - source_id: src_0ae96c1d…
+    url: https://www.atlassian.com/software/startups
 offers:
-  - title: Retool for Startups
-    summary: Eligible early-stage startups get 100% off Retool for one year on
-      monthly Team or Business plans (up to $60,000 value), followed by a 25%
-      discount in the second year.
+  - title: Atlassian for Startups
+    summary: Eligible startups can get Atlassian Cloud products (including Premium
+      editions of Jira, Confluence, Loom, Bitbucket, and more) for $0 for 12 months
+      for up to 50 users.
     eligibility:
-      statement: Must be bootstrapped, angel-funded, debt-funded, pre-seed, seed,
-        or Series A with under $10M in total funding, founded within the last 10
-        years, and a new customer on a monthly Team or Business plan.
+      statement: Must not be an existing Atlassian paid customer, must be VC funded
+        or associated with a partner accelerator/incubator, and must not have raised
+        more than $10 million in external funding.
 ```
 
 Eligibility is quoted in the vendor's own words rather than paraphrased, and
@@ -55,14 +59,17 @@ every fact traces back to the URL in `sources`.
 
 ## Getting it
 
+Browse it at [sourcey.com](https://sourcey.com), by vendor or by category. Or ask
+for one record and get that same offer back:
+
 ```sh
-curl -s https://sourcey.com/catalog.json \
-  | jq -r '.data.entities[] | select(.slug=="vercel") | .offers[0].summary'
+curl -s https://api.sourcey.com/v1/entities/by-slug/atlassian \
+  | jq -r '.data.offers[0].summary'
 ```
 
-> Eligible startups affiliated with an approved partner can receive up to $30,000
-> in Vercel credits issued over 12 months, plus Slack access, networking, private
-> events, and marketing opportunities.
+> Eligible startups can get Atlassian Cloud products (including Premium editions
+> of Jira, Confluence, Loom, Bitbucket, and more) for $0 for 12 months for up to
+> 50 users.
 
 No key and no signup, for you or for your agents. There is an
 [OpenAPI](https://api.sourcey.com/openapi.yml) surface, an
@@ -70,6 +77,8 @@ No key and no signup, for you or for your agents. There is an
 [change feed](https://sourcey.com/changes.ndjson) for watching terms move,
 [llms.txt](https://sourcey.com/llms.txt) for models, and a
 [guide](https://sourcey.com/SKILL.md) for agents working the data directly.
+
+Terms move. Confirm with the vendor before you rely on it.
 
 Facts are [CC BY 4.0](DATA-LICENSE.md) and training on them is welcome. Quote the
 `offer_id` and `revision_digest` and your citation still means something after
@@ -92,11 +101,13 @@ adding a new one.
 
 ## If it's your company
 
-Prove control of your domain, review what we have, and attest to the offers you
-stand behind. Your record then carries your signature rather than our reading of
-your page, and says so on its face. It costs nothing and it always will.
+Claim it and the record carries your signature instead of our reading of your
+page. Prove the domain whichever way suits you: DNS, a file on your site, a role
+address, or a reply from any mailbox on your domain. Claiming establishes who you
+are and never signs your offers for you; you attest to those separately, by exact
+revision.
 
-[sourcey.com](https://sourcey.com), or just send a pull request.
+Free, now and later. Start at `sourcey.com/claim/<your-slug>`.
 
 ## Licence
 
