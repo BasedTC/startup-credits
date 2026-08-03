@@ -67,7 +67,8 @@ jobs:
             validate-change \
             --repository "$GITHUB_WORKSPACE/candidate" \
             --base "$BASE_REVISION" \
-            --head "$HEAD_REVISION"
+            --head "$HEAD_REVISION" \
+            --taxonomy "$RUNNER_TEMP/candidate-verifier/taxonomy.json"
       - name: Verify Developer Certificate of Origin sign-off
         env:
           BASE_REVISION: ${{ github.event.pull_request.base.sha }}

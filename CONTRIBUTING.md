@@ -17,6 +17,9 @@ For a new record, copy a nearby vendor file and preserve the shape:
   not need one; and
 - keep separate Offers for materially different economics, eligibility, duration, access, or
   terms. Do not split one application bundle into a card per benefit.
+- Use only a category from the exact `taxonomy.json` bundled with the pinned Candidate Verifier.
+  The local preflight downloads that file, and both local and CI failures print the complete
+  current list; a nearby legacy record is not taxonomy authority.
 - Keep the vendor `description` to 200 characters and describe the vendor itself, not its offers.
 - Keep each `summary` to 240 characters: it is the compact public synopsis used in listings and
   metadata. An Offer may use optional `description` for longer source-backed context. Economics,
@@ -92,7 +95,8 @@ curl --fail --silent --show-error \
 mkdir "${work}/verifier"
 tar -xzf "${work}/${archive}" --strip-components=1 -C "${work}/verifier"
 node "${work}/verifier/sourcey-candidate-verifier.js" \
-  validate-change --repository "$PWD" --base "${base}" --head HEAD
+  validate-change --repository "$PWD" --base "${base}" --head HEAD \
+  --taxonomy "${work}/verifier/taxonomy.json"
 rm -rf "${work}"
 ```
 
