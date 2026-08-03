@@ -23,10 +23,13 @@
 
 ---
 
-Every tool has two prices: the one on the pricing page, and the one startups
-actually pay. The second one is public, scattered across a few hundred vendor
-pages, and it changes without telling anyone. This is the open record of it, one
-file per vendor, with the source and the date behind every fact.
+Every tool has two prices. The one on the pricing page, and the one startups
+actually pay once somebody tells them the program exists.
+
+The second price isn't a secret. It's just spread across a few hundred vendor
+pages, worded differently every time, and quietly revised whenever the vendor
+feels like it. So we write it down. One file per vendor, every fact carrying the
+page it came from and the day we read it.
 
 ## What a record looks like
 
@@ -94,12 +97,6 @@ stand behind. Your record then carries your signature rather than our reading of
 your page, and says so on its face. It costs nothing and it always will.
 
 [sourcey.com](https://sourcey.com), or just send a pull request.
-
-## The boundary
-
-This repository holds the vendor files. Everything that validates, compiles, and
-serves them belongs to Sourcey's private Catalog engine, and
-[AGENTS.md](AGENTS.md) draws the line.
 
 ## Licence
 
