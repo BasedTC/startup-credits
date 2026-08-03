@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Never pay the stranger price.</b><br>
-  The open registry of startup programs
+  <sub>The open registry of startup programs</sub>
 </p>
 
 <p align="center">
@@ -15,10 +15,10 @@
 
 <p align="center">
   <!-- Counts are read live from the published release; nothing here is kept by hand. -->
-  <img alt="vendors on record" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsourcey.com%2Fcatalog.json&query=%24.data.entities.length&label=vendors%20on%20record&style=flat-square&labelColor=1B1B1F&color=B35C00">
-  <img alt="last change" src="https://img.shields.io/github/last-commit/sourcey/startup-credits?style=flat-square&labelColor=1B1B1F&color=3F3F46&label=last%20change">
-  <img alt="changes per month" src="https://img.shields.io/github/commit-activity/m/sourcey/startup-credits?style=flat-square&labelColor=1B1B1F&color=3F3F46&label=changes%2Fmonth">
-  <img alt="data licence CC BY 4.0" src="https://img.shields.io/badge/data-CC%20BY%204.0-1B1B1F?style=flat-square&labelColor=1B1B1F&color=3F3F46">
+  <img alt="vendors on record" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsourcey.com%2Fcatalog.json&query=%24.data.entities.length&label=vendors%20on%20record&style=flat-square&labelColor=0a0908&color=d0231c">
+  <img alt="last change" src="https://img.shields.io/github/last-commit/sourcey/startup-credits?style=flat-square&labelColor=0a0908&color=176b45&label=last%20change">
+  <img alt="changes per month" src="https://img.shields.io/github/commit-activity/m/sourcey/startup-credits?style=flat-square&labelColor=0a0908&color=176b45&label=changes%2Fmonth">
+  <img alt="data licence CC BY 4.0" src="https://img.shields.io/badge/data-CC%20BY%204.0-6a645d?style=flat-square&labelColor=0a0908">
 </p>
 
 ---
