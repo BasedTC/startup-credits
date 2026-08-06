@@ -27,7 +27,7 @@ dependency closure. It must never rebuild the full catalog. Merge is the sole
 human activation and every live surface advances from the same resulting live
 head.
 
-The public `validate` check must start automatically for an opened or updated
+The public `sourcey/validation` status must start automatically for an opened or updated
 data pull request, use the exact digest-pinned workspace-owned verifier, and
 return actionable field errors before private review. `sourcey/admission` is a
 separate Sourcey-owned evidence gate and never contributor-authored work.

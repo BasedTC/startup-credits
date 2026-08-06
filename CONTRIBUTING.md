@@ -47,7 +47,7 @@ node -e 'console.log("src_"+require("node:crypto").randomBytes(32).toString("hex
 
 ## What evidence review checks
 
-The public `validate` check proves the YAML shape and changed identity closure. Sourcey's separate
+The public `sourcey/validation` status proves the YAML shape and changed identity closure. Sourcey's separate
 admission review then checks the submitted facts against the record's public source URLs:
 
 - published economics, eligibility, lifecycle, domains, links, and access facts must be supported
@@ -84,16 +84,16 @@ git rebase --signoff origin/main
 git push --force-with-lease
 ```
 
-The repository's `validate` check validates only the changed dependency closure
+The repository's `sourcey/validation` status validates only the changed dependency closure
 through the exact digest-pinned Sourcey Candidate Verifier and enforces the DCO.
-It starts automatically when a pull request is opened or updated. A green `validate`
-check means the submitted tree is structurally and semantically valid; contributors can
+It starts automatically when a pull request is opened or updated. A green `sourcey/validation`
+status means the submitted tree is structurally and semantically valid; contributors can
 push corrections to the same branch and receive a fresh result without maintainer review.
 External contributors do not need direct repository write access: GitHub may create a fork as the
 source of their pull request, and subsequent pushes to that same source branch update it normally.
 Sourcey's separate required `sourcey/admission` check proves that private,
 replayable evidence and authority were admitted for the exact pull-request Git
-tree; contributors never upload that private material. Once both checks pass and
+tree; contributors never upload that private material. Once both statuses pass and
 the pull request is merged, publication and live activation are automatic.
 
 For an exact local preflight, run this from a checkout with `origin/main` fetched:
