@@ -100,19 +100,19 @@ For an exact local preflight, run this from a checkout with `origin/main` fetche
 
 ```bash
 base="$(git merge-base HEAD origin/main)"
-digest="$(<.github/sourcey-candidate-verifier.sha256)"
+digest="$(<.github/sourcey-catalog-verifier.sha256)"
 work="$(mktemp -d)"
-archive="sourcey-candidate-verifier-sha256-${digest}.tar.gz"
+archive="sourcey-catalog-verifier-sha256-${digest}.tar.gz"
 curl --fail --silent --show-error \
-  "https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-${digest}/${archive}" \
+  "https://artifacts.sourcey.com/catalog/code/catalog-verifier/sha256-${digest}/${archive}" \
   --output "${work}/${archive}"
 curl --fail --silent --show-error \
-  "https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-${digest}/${archive}.sha256" \
+  "https://artifacts.sourcey.com/catalog/code/catalog-verifier/sha256-${digest}/${archive}.sha256" \
   --output "${work}/${archive}.sha256"
 (cd "${work}" && shasum -a 256 --check "${archive}.sha256")
 mkdir "${work}/verifier"
 tar -xzf "${work}/${archive}" --strip-components=1 -C "${work}/verifier"
-node "${work}/verifier/sourcey-candidate-verifier.js" \
+node "${work}/verifier/sourcey-catalog-verify.js" \
   validate-change --repository "$PWD" --base "${base}" --head HEAD \
   --taxonomy "${work}/verifier/taxonomy.json"
 rm -rf "${work}"
