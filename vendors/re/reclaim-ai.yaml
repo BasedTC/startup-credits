@@ -31,7 +31,7 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: Purchase of an eligible Starter or Business subscription for at least five user seats; price varies by plan and seat count.
+        description: Purchase at least five seats on an eligible Reclaim Starter or Business plan.
       benefits:
         - benefit_id: ben_01
           description: 20% off eligible Reclaim.ai plans for three years
