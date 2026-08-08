@@ -60,16 +60,16 @@ offers:
     program_id: prg_01kyyr9svgyw0svdrb717nexp9
     offer_slug: 50-off-with-github-for-startups-year-2
     offer_slug_aliases: []
-    title: 50% off with GitHub for Startups, Year 2
+    title: 50% off with GitHub for Startups — Year 2
     summary: Eligible early-stage startups receive 50% off GitHub for Startups in Year 2.
     lifecycle:
       status: active
       effective_from: 2026-08-01T08:14:29.306Z
     economics:
       benefits:
-        - applies_to: GitHub for Startups, Year 2
+        - applies_to: GitHub for Startups — Year 2
           benefit_id: ben_01
-          description: 50% off with GitHub for Startups, Year 2
+          description: 50% off with GitHub for Startups — Year 2
           duration:
             kind: exact
             value: P1Y
