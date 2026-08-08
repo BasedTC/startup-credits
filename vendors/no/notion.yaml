@@ -32,7 +32,7 @@ offers:
     program_id: prg_01kyyts97wr01a0f3as5qcgatc
     offer_slug: 6-months-free-with-notion-for-startups-partner-tier
     offer_slug_aliases: []
-    title: 6 months free with Notion for Startups, partner tier
+    title: 6 months free with Notion for Startups — partner tier
     summary: Get 6 months free of Notion for eligible startups affiliated with an approved partner network.
     lifecycle:
       status: active
@@ -90,7 +90,7 @@ offers:
     program_id: prg_01kyyts97wr01a0f3as5qcgatc
     offer_slug: free-credits-with-notion-for-startups-direct-apply
     offer_slug_aliases: []
-    title: Free credits with Notion for Startups, direct apply
+    title: Free credits with Notion for Startups — direct apply
     summary: Get $500 in Notion credits for eligible early-stage startups applying directly without a partner affiliation.
     lifecycle:
       status: active

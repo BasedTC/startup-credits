@@ -29,7 +29,7 @@ offers:
     program_id: prg_01kyyts97wfw7w8brz2xw4psa6
     offer_slug: free-compute-credits-with-nebius-for-startups-base-tier
     offer_slug_aliases: []
-    title: Free compute credits with Nebius for Startups, base tier
+    title: Free compute credits with Nebius for Startups — base tier
     summary: Provides $5,000 in immediate GPU credits for early-stage AI startups with under $5M in funding.
     lifecycle:
       status: active
@@ -82,7 +82,7 @@ offers:
     program_id: prg_01kyyts97wfw7w8brz2xw4psa6
     offer_slug: free-compute-credits-with-nebius-for-startups-high-growth-tier
     offer_slug_aliases: []
-    title: Free compute credits with Nebius for Startups, high-growth tier
+    title: Free compute credits with Nebius for Startups — high-growth tier
     summary: Provides $100,000 USD in compute credits for high-growth AI startups with significant compute needs.
     lifecycle:
       status: active
