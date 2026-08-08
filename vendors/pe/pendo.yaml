@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-07-31T23:27:27.796Z
 category: data-analytics
-description: Product analytics, in-app guides, and NPS built for startups—no dev team required.
+description: Product analytics, in-app guides, and NPS built for startups, no dev team required.
 links:
   site: https://www.pendo.io
 sources:

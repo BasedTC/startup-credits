@@ -102,7 +102,7 @@ offers:
     program_id: prg_01kyyts97xgd034zqh77z1n3r9
     offer_slug: free-credits-with-miro-startup-program-individual-tier
     offer_slug_aliases: []
-    title: Free credits with Miro Startup Program — individual tier
+    title: Free credits with Miro Startup Program, individual tier
     summary: $500 in Miro credits for individual startups without a Miro partner, accepted on a case-by-case basis.
     lifecycle:
       status: active
@@ -173,7 +173,7 @@ offers:
     program_id: prg_01kyyts97xgd034zqh77z1n3r9
     offer_slug: free-credits-with-miro-startup-program-partner-tier
     offer_slug_aliases: []
-    title: Free credits with Miro Startup Program — partner tier
+    title: Free credits with Miro Startup Program, partner tier
     summary: $1,000 in Miro credits for startups affiliated with an approved Miro Startup Program partner (VC, accelerator, or incubator).
     lifecycle:
       status: active

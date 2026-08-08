@@ -32,7 +32,7 @@ offers:
     program_id: prg_01kyyts97wxmzh9m06kxxcb1h2
     offer_slug: 20-off-with-docsend-startup-program-series-b
     offer_slug_aliases: []
-    title: 20% off with DocSend Startup Program — Series B
+    title: 20% off with DocSend Startup Program, Series B
     summary: DocSend for Startups gives Series B companies between $10M and $20M raised 20% off their annual DocSend Advanced plan.
     lifecycle:
       status: active
@@ -100,7 +100,7 @@ offers:
     program_id: prg_01kyyts97wxmzh9m06kxxcb1h2
     offer_slug: 50-off-with-docsend-startup-program-series-a
     offer_slug_aliases: []
-    title: 50% off with DocSend Startup Program — Series A
+    title: 50% off with DocSend Startup Program, Series A
     summary: DocSend for Startups gives Series A companies between $2M and $10M raised 50% off their annual DocSend Advanced plan.
     lifecycle:
       status: active
@@ -168,7 +168,7 @@ offers:
     program_id: prg_01kyyts97wxmzh9m06kxxcb1h2
     offer_slug: 90-off-with-docsend-startup-program-seed
     offer_slug_aliases: []
-    title: 90% off with DocSend Startup Program — Seed
+    title: 90% off with DocSend Startup Program, Seed
     summary: DocSend for Startups gives Seed-stage companies under $2M raised 90% off their annual DocSend Advanced plan.
     lifecycle:
       status: active

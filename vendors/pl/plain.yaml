@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-07-31T23:27:43.072Z
 category: support
-description: Plain is composable AI support infrastructure that gives B2B teams complete flexibility to build support their way — no-code or all-code.
+description: Plain is composable AI support infrastructure that gives B2B teams complete flexibility to build support their way, no-code or all-code.
 links:
   site: https://www.plain.com
 sources:
@@ -27,7 +27,7 @@ offers:
     program_id: prg_01kyxthgq23kty7wtpxcset2yk
     offer_slug: plain-horizon-startup-discount
     offer_slug_aliases: []
-    title: Plain for Startups — 50% Off Horizon Plan
+    title: Plain for Startups: 50% Off Horizon Plan
     summary: Eligible early-stage, VC-backed startups get 50% off Plain's Horizon plan for 12 months, providing 10 seats for a flat fee of $6,000.
     lifecycle:
       status: active

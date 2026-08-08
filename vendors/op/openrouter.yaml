@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-01T07:25:22.175Z
 category: ai-ml
-description: Everything an early-stage team needs to build, experiment, and scale with AI — without managing multiple providers.
+description: Everything an early-stage team needs to build, experiment, and scale with AI, without managing multiple providers.
 links:
   site: https://openrouter.ai
 sources:
