@@ -189,7 +189,7 @@ offers:
     program_id: prg_01kyh8jtf667atcvk4kp9spgx9
     offer_slug: free-cloud-credits-with-cloudflare-for-startups-bootstrapped-tier
     offer_slug_aliases: []
-    title: Free cloud credits with Cloudflare for Startups, bootstrapped tier
+    title: Free cloud credits with Cloudflare for Startups — bootstrapped tier
     summary: Get $5,000 in credits for the Cloudflare Developer Platform for bootstrapped and stealth startups.
     lifecycle:
       status: active
@@ -243,7 +243,7 @@ offers:
     program_id: prg_01kyh8jtf667atcvk4kp9spgx9
     offer_slug: free-cloud-credits-with-cloudflare-for-startups-early-stage-tier
     offer_slug_aliases: []
-    title: Free cloud credits with Cloudflare for Startups, early-stage tier
+    title: Free cloud credits with Cloudflare for Startups — early-stage tier
     summary: Get $25,000 in credits for the Cloudflare Developer Platform for early-stage startups with up to $1M raised.
     lifecycle:
       status: active
