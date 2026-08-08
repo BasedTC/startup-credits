@@ -12,6 +12,8 @@ description: Customer feedback software for creating surveys, measuring satisfac
 links:
   site: https://www.simplesat.io
 sources:
+  - source_id: src_17d0d67721bc702376d10e3745aa9465d13ca56a5cd4bc176ea5b9a9122d9ffb
+    url: https://www.simplesat.io
   - source_id: src_881e6b7af294f47b336e15dc1bb9552de60c90fb491df0272d1a821d4a92e703
     url: https://www.simplesat.io/simplesat-for-startups
 programs:
