@@ -17,7 +17,7 @@ For a new record, copy a nearby vendor file and preserve the shape:
   not need one; and
 - keep separate Offers for materially different economics, eligibility, duration, access, or
   terms. Do not split one application bundle into a card per benefit.
-- Use only a category from the exact `taxonomy.json` bundled with the pinned Candidate Verifier.
+- Use only a category from the exact `taxonomy.json` bundled with the pinned Catalog Verifier.
   The local preflight downloads that file, and both local and CI failures print the complete
   current list; a nearby legacy record is not taxonomy authority.
 - Keep the vendor `description` to 200 characters and describe the vendor itself, not its offers.
@@ -85,7 +85,7 @@ git push --force-with-lease
 ```
 
 The repository's `sourcey/validation` status validates only the changed dependency closure
-through the exact digest-pinned Sourcey Candidate Verifier and enforces the DCO.
+through the exact digest-pinned Sourcey Catalog Verifier and enforces the DCO.
 It starts automatically when a pull request is opened or updated. A green `sourcey/validation`
 status means the submitted tree is structurally and semantically valid; contributors can
 push corrections to the same branch and receive a fresh result without maintainer review.
