@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-01T07:22:13.711Z
 category: auth-security
-description: All-in SOC 2 readiness for startups (work, audit, pen test, and tooling) from $2,500 to $12,500.
+description: All-in SOC 2 readiness for startups — work, audit, pen test, and tooling — from $2,500 to $12,500.
 links:
   site: https://getagency.com
 sources:

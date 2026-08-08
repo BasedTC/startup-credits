@@ -61,7 +61,7 @@ offers:
     program_id: prg_01kyyr9svgytm49k59kkp561mf
     offer_slug: 20-000-in-cloud-credits-and-partner-perks-via-digitalocean-hatch-partner-tier
     offer_slug_aliases: []
-    title: $20,000 in cloud credits and partner perks via DigitalOcean Hatch, partner tier
+    title: $20,000 in cloud credits and partner perks via DigitalOcean Hatch — partner tier
     summary: Receive $20,000 in credits over 12 months, 15 months of free Standard support, and extra ecosystem perks when referred by an approved partner.
     lifecycle:
       status: active
@@ -120,7 +120,7 @@ offers:
     program_id: prg_01kyyr9svgytm49k59kkp561mf
     offer_slug: up-to-1-000-in-credits-via-digitalocean-hatch-direct-tier
     offer_slug_aliases: []
-    title: Up to $1,000 in credits via DigitalOcean Hatch, direct tier
+    title: Up to $1,000 in credits via DigitalOcean Hatch — direct tier
     summary: Get up to $1,000 in cloud infrastructure credits directly through DigitalOcean Hatch for new business accounts.
     lifecycle:
       status: active
@@ -166,7 +166,7 @@ offers:
     program_id: prg_01kyyr9svgytm49k59kkp561mf
     offer_slug: up-to-100-000-in-compute-credits-via-digitalocean-hatch-ai-ml-tier
     offer_slug_aliases: []
-    title: Up to $100,000 in compute credits via DigitalOcean Hatch, AI/ML tier
+    title: Up to $100,000 in compute credits via DigitalOcean Hatch — AI/ML tier
     summary: AI-focused startups receive up to $100,000 in compute credits and preferred GPU Droplet pricing at $1.90/hr.
     lifecycle:
       status: active

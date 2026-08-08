@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-01T07:56:18.512Z
 category: auth-security
-description: Wiz Go is a complete cloud security bundle for fast-moving teams, offering full visibility, protection, and flexibility with startup-friendly pricing.
+description: Wiz Go is a complete cloud security bundle for fast-moving teams—offering full visibility, protection, and flexibility with startup-friendly pricing.
 links:
   site: https://www.wiz.io/lp/startups
 sources:

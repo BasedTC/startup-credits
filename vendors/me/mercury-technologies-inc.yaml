@@ -41,7 +41,7 @@ offers:
         criterion_id: cri_01
         kind: manual
         reason: vendor-discretion
-        statement: Access business credit cards as soon as day one, with no minimums, credit checks, or personal guarantees.
+        statement: Access business credit cards as soon as day one — no minimums, credit checks, or personal guarantees.
     roles:
       terms_authority_entity_id: ent_01kyyn497fymbxq5b9t4er223p
       access_operator_entity_id: ent_01kyyn497fymbxq5b9t4er223p
