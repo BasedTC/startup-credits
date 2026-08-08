@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-03T01:08:18Z
 category: support
-description: Customer feedback software for creating surveys, measuring satisfaction, and reporting customer experience insights.
+description: Customer feedback software for measuring CSAT, NPS, and CES through surveys embedded in helpdesk workflows.
 links:
   site: https://www.simplesat.io
 sources:
@@ -21,7 +21,7 @@ programs:
     program_slug: simplesat-for-startups
     program_slug_aliases: []
     title: Simplesat for Startups
-    summary: Simplesat gives qualifying early-stage technology startups six months of its Standard plan at no cost.
+    summary: Qualifying startups receive all features of Simplesat Standard and live customer support free for six months.
     source_ids:
       - src_881e6b7af294f47b336e15dc1bb9552de60c90fb491df0272d1a821d4a92e703
 offers:
@@ -30,7 +30,7 @@ offers:
     offer_slug: six-months-free-standard
     offer_slug_aliases: []
     title: Six months free on Simplesat Standard
-    summary: Eligible startups receive all features of the Simplesat Standard plan and live customer support free for six months.
+    summary: Six months of Simplesat Standard at no cost, with live customer support, for qualifying first-time startup customers.
     lifecycle:
       status: active
       effective_from: 2026-08-03T01:08:18Z
