@@ -16,9 +16,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      # The trusted checkout exists only to read the current Catalog Verifier
+      # pin, so it tracks the default branch rather than the pull request's
+      # base commit: a pull request opened before the pin existed would
+      # otherwise fail on a missing file instead of being validated.
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
-          ref: ${{ github.event.pull_request.base.sha }}
+          ref: ${{ github.event.repository.default_branch }}
           path: trusted
           persist-credentials: false
       - name: Fetch the exact candidate SHA as inert data
