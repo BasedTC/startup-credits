@@ -35,6 +35,18 @@ node -e 'console.log("src_"+require("node:crypto").randomBytes(32).toString("hex
 
 - Describe only public vendor, program, and offer facts supported by the URLs
   in the record.
+- Cite only canonical sources: pages published by the party that controls the
+  fact. Vendor facts and vendor-run offers cite the vendor's own domains. A
+  page on any other host counts only when that host belongs to an entity the
+  offer's `roles` name, which is the channel-operator case: a perks platform's
+  own page is canonical for a perk that platform grants to its members, and the
+  record then names that platform as `access_operator_entity_id` and models the
+  membership in `eligibility` and `access`. Directory and aggregator listings
+  that describe someone else's program are never evidence; admission ignores
+  them entirely, and a subject whose only sources are such listings is
+  rejected before review. Do not name a role-holder the party does not
+  actually hold: evidence review checks that the cited operator page shows the
+  operator granting or gating the offer, not merely describing it.
 - Keep stable IDs stable. Correct or end an offer instead of deleting its
   history.
 - Do not claim Sourcey verification, vendor signatures, freshness, or
@@ -52,6 +64,9 @@ admission review then checks the submitted facts against the record's public sou
 
 - published economics, eligibility, lifecycle, domains, links, and access facts must be supported
   by cited source material;
+- support only counts from canonical sources: the vendor's own domains, or the domains of an
+  entity the offer's `roles` name. Text on any other host is ignored no matter how well it
+  matches, and the failure names the ignored hosts;
 - Sourcey-written titles, summaries, descriptions, and taxonomy labels may faithfully paraphrase
   those cited facts and do not need to appear verbatim on the vendor page;
 - opaque Sourcey IDs and canonical encodings such as money units are not expected to appear in
