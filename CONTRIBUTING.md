@@ -50,7 +50,10 @@ node -e 'console.log("src_"+require("node:crypto").randomBytes(32).toString("hex
 - Keep stable IDs stable. Correct or end an offer instead of deleting its
   history.
 - Do not claim Sourcey verification, vendor signatures, freshness, or
-  provenance tiers in YAML. Sourcey's independent evidence and authority
+  provenance tiers in YAML. Declared offers (vendor-signed offers with no
+  public source) are a hosted vendor-authority lane, never a contribution;
+  every offer in this repository carries `source_ids`. Sourcey's
+  independent evidence and authority
   pipeline derives those properties.
 - Do not add executable code, schemas, generated output, evidence objects,
   scanner state, package files, or release controls.
