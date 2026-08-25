@@ -1,26 +1,26 @@
 # Contributing
 
 Normal pull requests add or update one or more files under
-`vendors/{shard}/`.
+`entities/{shard}/`.
 
-The shard is the first two characters of the vendor slug (or the whole slug
+The shard is the first two characters of the Entity slug (or the whole slug
 when it is shorter), and the filename is exactly `{slug}.yaml`; CI verifies
 that identity-derived path.
 
-Keep a data pull request data-only; do not mix vendor YAML with documentation or workflow edits.
-For a new record, copy a nearby vendor file and preserve the shape:
+Keep a data pull request data-only; do not mix Entity YAML with documentation or workflow edits.
+For a new record, copy a nearby Entity file and preserve the shape:
 
 - allocate fresh ULIDs with the existing `ent_`, `prg_`, and `off_` prefixes; never reuse an ID;
 - use one opaque, stable file-local `source_id` for each public URL and reference it from the
   Programs and Offers it supports; a `source_id` does not encode or hash its URL;
-- add a Program only when the vendor publicly names a real umbrella program; standalone Offers do
+- add a Program only when the Entity publicly names a real umbrella program; standalone Offers do
   not need one; and
 - keep separate Offers for materially different economics, eligibility, duration, access, or
   terms. Do not split one application bundle into a card per benefit.
 - Use only a category from the exact `taxonomy.json` bundled with the pinned Catalog Verifier.
   The local preflight downloads that file, and both local and CI failures print the complete
   current list; a nearby legacy record is not taxonomy authority.
-- Keep the vendor `description` to 200 characters and describe the vendor itself, not its offers.
+- Keep `profile.description` to 200 characters and describe the Entity itself, not its Offers.
 - Keep each `summary` to 240 characters: it is the compact public synopsis used in listings and
   metadata. An Offer may use optional `description` for longer source-backed context. Economics,
   eligibility, and access still belong in their structured fields rather than repeated prose.
@@ -81,7 +81,7 @@ If admission cannot cover a submitted fact, its result names the uncovered field
 evidence is accepted. Correct the YAML or cite a better public source on the same pull request; do
 not rewrite a supported fact merely to make it match a source sentence word for word.
 
-Before starting a new vendor, search the
+Before starting a new Entity, search the
 [open pull requests](https://github.com/sourcey/startup-credits/pulls) and
 [missing-record issues](https://github.com/sourcey/startup-credits/issues?q=is%3Aissue+is%3Aopen).
 If it is not already covered, open a missing-record issue and comment there before doing the work;

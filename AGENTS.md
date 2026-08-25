@@ -5,7 +5,7 @@ repository. “Startup Credits” is only this GitHub repository's name.
 
 Allowed:
 
-- `vendors/**/*.yaml`;
+- `entities/**/*.yaml`;
 - concise contributor, legal, and repository-boundary documentation; and
 - minimal GitHub metadata and YAML workflows that invoke digest-pinned tools
   owned by the private Sourcey workspace.
@@ -22,7 +22,7 @@ Forbidden:
 - semantic-version changes, `v2` shapes, or product/package naming decisions
   without Kam's explicit approval.
 
-Pull-request CI processes only changed vendor files and their exact identity
+Pull-request CI processes only changed Entity files and their exact identity
 dependency closure. It must never rebuild the full catalog. Merge is the sole
 human activation and every live surface advances from the same resulting live
 head.
@@ -40,7 +40,8 @@ vendor page must literally contain. The private Catalog policy and evaluator
 are the sole authority for that distinction; this repository does not restate
 or implement it.
 
-`vendors/` is the only public data collection. Offers, programs, links, and
-sources are nested in their owning vendor document. Do not add a generic
+`entities/` is the only public data collection. Programs and Offers are nested
+in their owning Entity document; repository evidence remains in that same
+document but outside the shared `entity` envelope. Do not add a generic
 `data/` wrapper or another top-level collection unless Kam explicitly approves
 a genuinely independent public authoring surface.
