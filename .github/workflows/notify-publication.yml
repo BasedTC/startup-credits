@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "vendors/**/*.yaml"
+      - "entities/**/*.yaml"
 
 permissions:
   contents: read
@@ -15,6 +15,7 @@ concurrency:
 
 jobs:
   notify:
+    if: github.event.before != 'ce7e8d351e55eb956f5188bbfe03e9a213b2ba53'
     runs-on: ubuntu-latest
     timeout-minutes: 2
     steps:

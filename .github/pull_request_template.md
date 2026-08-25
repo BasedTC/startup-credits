@@ -8,7 +8,7 @@ List the first-party URLs supporting the change.
 
 ## Certification
 
-- [ ] I changed only allowed repository content and did not mix vendor YAML with other paths.
+- [ ] I changed only allowed repository content and did not mix Entity YAML with other paths.
 - [ ] Public sources substantiate every submitted factual value; any Sourcey-written prose is a
       neutral summary, not a fabricated vendor quote.
 - [ ] I did not author verification, provenance, freshness, or signature claims.

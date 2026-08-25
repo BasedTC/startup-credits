@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://sourcey.com">sourcey.com</a> ·
+  <a href="https://sourcey.com/startup-credits">Browse startup credits</a> ·
   <a href="https://sourcey.com/catalog.json">catalog.json</a> ·
   <a href="https://sourcey.com/llms.txt">llms.txt</a> ·
   <a href="https://mcp.sourcey.com/mcp">MCP</a> ·
@@ -15,7 +15,7 @@
 
 <p align="center">
   <!-- Counts are read live from the published release; nothing here is kept by hand. -->
-  <img alt="vendors on record" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsourcey.com%2Fcatalog.json&query=%24.data.entities.length&label=vendors%20on%20record&style=flat-square&labelColor=0a0908&color=d0231c">
+  <img alt="entities on record" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsourcey.com%2Fcatalog.json&query=%24.data.entities.length&label=entities%20on%20record&style=flat-square&labelColor=0a0908&color=d0231c">
   <img alt="last change" src="https://img.shields.io/github/last-commit/sourcey/startup-credits?style=flat-square&labelColor=0a0908&color=176b45&label=last%20change">
   <img alt="changes per month" src="https://img.shields.io/github/commit-activity/m/sourcey/startup-credits?style=flat-square&labelColor=0a0908&color=176b45&label=changes%2Fmonth">
   <img alt="data licence CC BY 4.0" src="https://img.shields.io/badge/data-CC%20BY%204.0-6a645d?style=flat-square&labelColor=0a0908">
@@ -28,7 +28,7 @@ actually pay once somebody tells them the program exists.
 
 The second price isn't a secret. It's just spread across a few hundred vendor
 pages, worded differently every time, and quietly revised whenever the vendor
-feels like it. So we write it down. One file per vendor, every fact carrying the
+feels like it. So we write it down. One file per Entity, every fact carrying the
 page it came from and the day we read it.
 
 Nothing here is for sale. Tiers come from evidence and are never influenced by
@@ -38,8 +38,22 @@ records with their own revision digests, exactly like the data they govern.
 ## What a record looks like
 
 ```yaml
-# vendors/at/atlassian.yaml
-name: Atlassian
+# entities/at/atlassian.yaml
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_…
+  slug: atlassian
+  slug_aliases: []
+  name: Atlassian
+  domains:
+    - value: atlassian.com
+      role: primary
+      valid_from: 2026-01-01T00:00:00.000Z
+  category: productivity
+profile:
+  description: Atlassian makes collaboration and developer tools for software teams.
+  links:
+    site: https://www.atlassian.com/
 sources:
   - source_id: src_0ae96c1d…
     url: https://www.atlassian.com/software/startups
@@ -61,7 +75,7 @@ it is not presented as a vendor quotation.
 
 ## Getting it
 
-Browse it at [sourcey.com](https://sourcey.com), by vendor or by category. Or ask
+Browse it at [sourcey.com/startup-credits](https://sourcey.com/startup-credits), by record or by category. Or ask
 for one record and get that same offer back:
 
 ```sh
@@ -90,7 +104,7 @@ the offer moves:
 
 ## Fixing or adding one
 
-Copy a nearby file under `vendors/`, keep the shape, open a pull request. CI
+Copy a nearby file under `entities/`, keep the shape, open a pull request. CI
 checks only what you changed and hands back real field errors, so you can push
 corrections without waiting on a maintainer.
 
