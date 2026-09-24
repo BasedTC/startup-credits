@@ -10,9 +10,11 @@ entity:
       valid_from: 2026-08-28T16:58:50.170Z
   category: auth-security
 profile:
-  description: Tuteliq provides child-safety APIs for detecting grooming, bullying, self-harm, fraud, radicalisation, and synthetic media across multiple content types.
+  summary: Tuteliq is a child safety API for developers that detects grooming, bullying, scams, self-harm, and more across text, voice, image, and video.
+  description: Tuteliq provides child-safety detection APIs for grooming, bullying, scams, self-harm, CSAM, and deepfakes across text, voice, image, and video content.
   links:
     site: https://tuteliq.ai
+    pricing: https://tuteliq.ai/pricing
 sources:
   - source_id: src_bbfe4a6f4151f42be52629dc85ae4aaad6925954710e52a7180b4b4a8789f113
     url: https://tuteliq.ai/startups
@@ -23,7 +25,7 @@ programs:
     program_slug: tuteliq-startup-program
     program_slug_aliases: []
     title: Tuteliq Startup Program
-    summary: Approved early-stage companies building products for children or young people receive Tuteliq's Build plan free for 12 months.
+    summary: Tuteliq's Startup Program gives mission-driven startups building for children its child safety API free for 12 months, subject to review.
     source_ids:
       - src_bbfe4a6f4151f42be52629dc85ae4aaad6925954710e52a7180b4b4a8789f113
 offers:
@@ -31,8 +33,8 @@ offers:
     program_id: prg_01m14my7dg9j3fgtcnz0qrsr6d
     offer_slug: twelve-months-free-build-plan
     offer_slug_aliases: []
-    title: Twelve months free Tuteliq Build plan
-    summary: Approved pre-Series-A companies serving children or young people receive the Tuteliq Build plan free for 12 months, including 25,000 messages monthly and full API access.
+    title: Tuteliq child safety API free for 12 months
+    summary: Mission-driven startups building for children can get Tuteliq's child safety API, including grooming, CSAM, and deepfake detection, free for 12 months after applying for review.
     lifecycle:
       status: active
       effective_from: 2026-08-28T16:58:50.170Z
@@ -41,31 +43,18 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Tuteliq Build plan with 25,000 messages per month, full API access, and the moderation dashboard free for 12 months
+          description: Tuteliq's child safety API, with grooming, CSAM, and deepfake detection, free for 12 months.
           kind: free-service
-          service: Tuteliq Build plan
+          service: Tuteliq child safety API
           duration:
             kind: exact
             value: P1Y
-        - benefit_id: ben_02
-          description: Direct access to Tuteliq's safeguarding and engineering team during integration
-          kind: other
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_01
-            kind: manual
-            reason: external-verification
-            statement: Company's product is used by, built for, or built around children and young people.
-          - criterion_id: cri_02
-            kind: manual
-            reason: vendor-discretion
-            statement: Company is building a product with a clear child-safety or wellbeing purpose.
-          - criterion_id: cri_03
-            kind: manual
-            reason: external-verification
-            statement: Company is early-stage and has not yet raised a Series A round.
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: The applicant is a mission-driven startup building for children, and Tuteliq approves its application after review.
     roles:
       terms_authority_entity_id: ent_01m14my7de6ra66wnvxzvt47x3
       access_operator_entity_id: ent_01m14my7de6ra66wnvxzvt47x3
@@ -77,4 +66,3 @@ offers:
     source_ids:
       - src_bbfe4a6f4151f42be52629dc85ae4aaad6925954710e52a7180b4b4a8789f113
       - src_8f0fef4a204ea1204d65583a9ed85264b3b70e768252601740fc621dc997da1c
-
