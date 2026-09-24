@@ -43,9 +43,9 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Tuteliq's child safety API, with grooming, CSAM, and deepfake detection, free for 12 months.
+          description: Tuteliq's child safety API free for 12 months.
           kind: free-service
-          service: Tuteliq child safety API
+          service: Tuteliq's child safety API
           duration:
             kind: exact
             value: P1Y
@@ -60,8 +60,9 @@ offers:
       access_operator_entity_id: ent_01m14my7de6ra66wnvxzvt47x3
     access:
       availability: public
-      method: form
+      method: other
       url: https://tuteliq.ai/startups
+      instructions: Apply for review.
     terms_url: https://tuteliq.ai/terms
     source_ids:
       - src_bbfe4a6f4151f42be52629dc85ae4aaad6925954710e52a7180b4b4a8789f113
