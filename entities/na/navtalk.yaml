@@ -10,6 +10,7 @@ entity:
       valid_from: 2026-08-28T16:55:47.317Z
   category: ai-ml
 profile:
+  summary: NavTalk provides real-time AI avatars, or digital humans, with APIs for building conversational experiences in customer support, tutoring, sales, healthcare, and kiosks.
   description: NavTalk provides real-time AI avatar technology and APIs for interactive support, education, sales, healthcare, and kiosk experiences.
   links:
     site: https://navtalk.ai/en/
