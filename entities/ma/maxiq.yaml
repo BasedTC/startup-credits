@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-08-28T16:50:14.426Z
   category: crm-sales
 profile:
-  description: MaxIQ provides an AI revenue platform for conversation intelligence, sales forecasting, workflow automation, and customer success.
+  summary: MaxIQ is an AI revenue platform that combines conversation intelligence, pipeline visibility, forecasting, sales workflow automation, and customer success.
+  description: MaxIQ provides an AI revenue platform with InspectIQ, ForecastIQ, EchoIQ, and SuccessIQ for pipeline inspection, forecasting, and conversation intelligence.
   links:
     site: https://www.getmaxiq.com
 sources:
@@ -23,7 +24,7 @@ programs:
     program_slug: maxiq-for-startups
     program_slug_aliases: []
     title: MaxIQ for Startups
-    summary: MaxIQ gives eligible startups 12 months of full Revenue AI platform access free, a benefit the vendor values at more than $15,000.
+    summary: The MaxIQ Startup Program gives eligible startups 12 months of full MaxIQ platform access free, which MaxIQ says is over $15,000 in value.
     source_ids:
       - src_071628fbc41f2dc75093b21b674ceea792f6311609e3c7b4cbdfe095d5c7e695
       - src_e8e968918f3ac57fcdb3e448b346e0478a8ac91eb348a37c40627a21b42ff3b8
@@ -33,7 +34,7 @@ offers:
     offer_slug: twelve-months-free-full-platform-access
     offer_slug_aliases: []
     title: Twelve months free MaxIQ platform access
-    summary: Eligible startups receive 12 months of full MaxIQ platform access free, valued by MaxIQ at more than $15,000, with no credit card required to apply.
+    summary: Eligible startups get 12 months of full MaxIQ platform access free, which MaxIQ says is over $15,000 in value. No credit card is required to apply.
     lifecycle:
       status: active
       effective_from: 2026-08-28T16:50:14.426Z
@@ -42,9 +43,9 @@ offers:
         kind: none
       benefits:
         - benefit_id: ben_01
-          description: Full MaxIQ Revenue AI platform access free for 12 months, valued by MaxIQ at more than $15,000
+          description: 12 months of full MaxIQ platform access free, which MaxIQ says is over $15,000 in value.
           kind: free-service
-          service: MaxIQ Revenue AI platform
+          service: MaxIQ platform
           duration:
             kind: exact
             value: P1Y
@@ -56,7 +57,7 @@ offers:
             fact: company.funding_raised_usd
             kind: predicate
             operator: gte
-            statement: Company has raised at least $5,000,000 in funding.
+            statement: The company has raised at least $5M in funding.
             value:
               type: number
               value: 5000000
@@ -64,19 +65,19 @@ offers:
             fact: company.sales_representative_count
             kind: predicate
             operator: lt
-            statement: Company has fewer than 10 sales representatives.
+            statement: The company has fewer than 10 sales reps.
             value:
               type: number
               value: 10
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
-            statement: Company is an active portfolio company or accelerator participant associated with an approved MaxIQ partner.
+            statement: The company is associated with an approved partner, as an active portfolio company or accelerator participant.
           - criterion_id: cri_04
             fact: company.is_current_customer
             kind: predicate
             operator: eq
-            statement: Company is not an existing MaxIQ customer.
+            statement: The company is not an existing MaxIQ customer.
             value:
               type: boolean
               value: false
